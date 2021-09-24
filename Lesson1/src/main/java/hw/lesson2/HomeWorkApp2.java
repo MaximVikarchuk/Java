@@ -1,61 +1,69 @@
 package hw.lesson2;
 
-import java.util.SimpleTimeZone;
 
-public class HomeWorkApp2 {
+ class HomeWorkApp2 {
 
     public static void main(String[] args) {
 
-/*        studySwitch();
+        System.out.println("exercise1 : " + checkSN(3, 22));
+        System.out.println("----------------");
+
+        numPosNeg1(1);
+        System.out.println("----------------");
+
+
+        String result = (numPosNeg2(-3)) ? "positive" : "negative";
+        System.out.println(result);
+        System.out.println("----------------");
+
+
+        stringAndNum("exercise4", 3);
+        System.out.println("----------------");
+
+        int year = 2018;
+        System.out.println("year " + year + " is leap? " + isLeapYear(year));
+        System.out.println("----------------");
+    }
+    // 1. Написать метод, принимающий на вход два целых числа и проверяющий, что их сумма лежит в пределах
+    //    от 10 до 20 (включительно), если да – вернуть true, в противном случае – false.
+    public static boolean checkSN(int first, int second) {
+
+        return (first + second >= 10) && (first + second <= 20);
     }
 
-     private static void studySwitch() {
-        String nameLetter = "hhh";
-        switch (nameLetter) {
-            case "Olga":
-                System.out.println("Send letter to Olga");
-                break;
-            case "Boris":
-                System.out.println("Send letter to Boris");
-                break;
-            case "Maria":
-                System.out.println("Send letter to Maria");
-                break;
-            case "Alex":
-                System.out.println("Send letter to Alex");
-                break;
-            default:
-                System.out.println("Go to the office");
-                break;
-       }
-    }
-*/
 
+    // 2. Написать метод, которому в качестве параметра передается целое число, метод должен напечатать в консоль,
+//    положительное ли число передали или отрицательное. Замечание: ноль считаем положительным числом.
 
-      /*  System.out.print("cat 1");
-        System.out.print("cat 2");
-        System.out.print("cat 3");
-        System.out.print("cat 4");
-        System.out.print("cat 5");
-        System.out.print("cat 6");
-        System.out.print("cat 7");
-        System.out.print("cat 8");
-        System.out.print("cat 9");
-        System.out.print("cat 10");
-
-       for (int i = 1; i <= 10; i++) {
-           System.out.print("Cat" + i + " ");
-       }
-*/
-
-
-       System.out.print("result:"());
-    }
-
-    public static int myMath(int value, int sign) {
-        int result = value;
-        for (int i = 1; i < sign; i++) {
-            result = result * value
+    public static void numPosNeg1(int number) {
+        if (number <= 0) {
+        System.out.println(number + " negative ");
+    } else {
+            System.out.println(number + " positive ");
         }
     }
+
+// 3. Написать метод, которому в качестве параметра передается целое число. Метод должен вернуть true,
+//    если число отрицательное, и вернуть false если положительное.
+
+    public  static boolean numPosNeg2(int number1) {
+        return (number1 < 0);
+    }
+
+    // 4. Написать метод, которому в качестве аргументов передается строка и число, метод должен отпечатать
+//    в консоль указанную строку, указанное количество раз;
+
+    public static void stringAndNum(String value, int count) {
+        for (int i = 0; i < count; i++) {
+            System.out.println("string №" + i + ":" + value);
+        }
+    }
+
+// 5. Написать метод, который определяет, является ли год високосный, и возвращает boolean (високосный - true,
+//    не високосный - false). Каждый 4-й год является високосным, кроме каждого 100-го, при этом каждый 400-й – високосный.
+        public static boolean isLeapYear(int year) {
+            return (year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0);
+        }
+
+
 }
