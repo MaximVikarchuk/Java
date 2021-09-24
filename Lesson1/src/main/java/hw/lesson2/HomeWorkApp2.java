@@ -43,6 +43,7 @@ package hw.lesson2;
         }
     }
 
+
 // 3. Написать метод, которому в качестве параметра передается целое число. Метод должен вернуть true,
 //    если число отрицательное, и вернуть false если положительное.
 
@@ -56,7 +57,9 @@ package hw.lesson2;
     public static void stringAndNum(String value, int count) {
         for (int i = 0; i < count; i++) {
             System.out.println("string №" + i + ":" + value);
+
         }
+
     }
 
 // 5. Написать метод, который определяет, является ли год високосный, и возвращает boolean (високосный - true,
