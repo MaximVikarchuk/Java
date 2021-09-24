@@ -48,14 +48,29 @@ public class HomeWorkApp2 {
        }
 */
 
+//        for (int i = 0; i < 3; i++) {
+//            for (int j = 0; j <= 2; j++) {
+//
+//            }
+//        }
+//
+//
+////       System.out.print("result:" + myMath(2, 10));
+//    }
+//
+//    public static int myMath(int value, int sign) {
+//        int result = value;
+//        for (int i = 1; i < sign; i++) {
+//            result = result * value;
+//        }
+//        return result;
+//    }
 
-       System.out.print("result:"());
-    }
+    public static void printTable(int height, int width) {
 
-    public static int myMath(int value, int sign) {
-        int result = value;
-        for (int i = 1; i < sign; i++) {
-            result = result * value
+        for (int y = 0, y < width; y++) {
+            for ()
         }
+
     }
 }
