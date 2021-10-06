@@ -22,12 +22,15 @@ public class HomeWorkApp {
 //Orange
 //Banana
 //Apple
-    public static void printThreeWords() {
 
-        System.out.println("Orange");
-        System.out.println("Banana");
-        System.out.println("Apple");
-    }
+
+
+        public static void printThreeWords() {
+
+            System.out.println("Orange");
+            System.out.println("Banana");
+            System.out.println("Apple");
+        }
 
     //3. Создайте метод checkSumSign(), в теле которого объявите две int переменные a и b, и инициализируйте их любыми значениями, которыми захотите.
 //Далее метод должен просуммировать эти переменные, и если их сумма больше или равна 0,
